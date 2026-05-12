@@ -1,0 +1,17 @@
+[general]
+name=Vectorization Bridge
+qgisMinimumVersion=3.16
+description=Narzędzia automatycznej wektoryzacji map. SAGA Next Gen WYMAGANA dla pełnej funkcjonalności (klasyfikacja, k-means, edge detection); GeoAI ZALECANA (opcjonalna) do trenowania modeli.
+about=Wtyczka dodaje grupę algorytmów Processing Toolbox wspomagających automatyczną wektoryzację map dawnych. Zawiera: cięcie rastra na kafle do uczenia maszynowego (z opcjonalną maską), inferencja wytrenowanych modeli (PyTorch .pth/.pt + ONNX .onnx), wykrywanie krawędzi (Canny/Sobel/SAGA), klasyfikacja pikseli RGB (Euklidesowa + CIEDE2000), 9 algorytmów proxy SAGA NG (klasyfikacja: ANN/DT/LR/NB/RF/SVM, k-means, edge detection: Vigra/Wombling), diagnostykę zależności. WYMAGANA wtyczka SAGA Next Gen dla pełnej funkcjonalności. ZALECANA (opcjonalna) wtyczka GeoAI do trenowania modeli. Komplementarna z Deepness (zaokrąglanie extent w cięciu kafli, gdy Deepness zainstalowany).
+version=1.0.0
+author=UczelniePrzyszlosci
+email=jakub.frommholz@gmail.com
+homepage=
+tracker=
+repository=
+hasProcessingProvider=yes
+tags=raster, machine learning, vectorization, edge detection, classification, tiles, deepness, saga, compatibility
+category=Raster
+icon=icon.svg
+experimental=False
+deprecated=False
